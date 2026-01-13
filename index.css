@@ -1,0 +1,46 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Animations */
+@keyframes spin-slow {
+  from { transform: rotateX(45deg) rotateY(0deg); }
+  to { transform: rotateX(45deg) rotateY(360deg); }
+}
+
+@keyframes reverse-spin {
+  from { transform: rotateX(-45deg) rotateY(360deg); }
+  to { transform: rotateX(-45deg) rotateY(0deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+.animate-reverse-spin {
+  animation: reverse-spin 6s linear infinite;
+}
+
+/* 3D Transforms */
+.rotate-x-45 {
+  transform: rotateX(45deg);
+}
+
+.-rotate-x-45 {
+  transform: rotateX(-45deg);
+}
+
+.perspective-\[1000px\] {
+  perspective: 1000px;
+}
+
+.perspective-\[2000px\] {
+  perspective: 2000px;
+}
+
+.perspective-\[500px\] {
+  perspective: 500px;
+}
